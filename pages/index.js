@@ -1,36 +1,31 @@
-import Head from "next/head";
+import Meta from "./components/meta";
 
 export default function Home() {
   return (
     <div className="container">
-      <Head>
-        <title>Peluqueria | Simbiosis</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main>
-        <h1 className="title">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.instagram.com/simbiosispeluqueria/"
-          >
-            Simbiosis Peluqueria
-          </a>
-        </h1>
+        <h2 className="m-0">Desde 2004</h2>
+        <h1 className="title">Simbiosis</h1>
+        <h2 className="mb-4">peluquería y estética</h2>
+
+        <p className="fs-4 text-center w-75">
+          <span className="highlight">Simbiosis</span> es un centro de estética
+          unisex atendido por profesionales estilistas que utilizan los mejores
+          productos del mercado internacional para el cuidado de tu belleza
+          integral. Supervisado por sus dueños. Acercate a conocer las novedades
+          que nuestro equipo tiene para ofrecerte. Te esperamos!
+        </p>
+
+        <div className="button-sections">
+          <button className="draw meet">Servicios</button>
+          <button className="draw meet">Contacto</button>
+          <button className="draw meet">Galeria</button>
+        </div>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Authors: Cassano Juan Cruz {"&"} Lescano Leandro
-        </a>
-      </footer>
+      {/* <footer>Authors: Cassano Juan Cruz {"&"} Lescano Leandro</footer> */}
 
-      <style jsx>{`
+      {/* <style jsx>{`
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -174,7 +169,7 @@ export default function Home() {
         * {
           box-sizing: border-box;
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }
