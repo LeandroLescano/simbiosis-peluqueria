@@ -21,6 +21,9 @@ function Meta() {
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"
       ></script>
+      <link rel="stylesheet" href="jquery.justified.images.css"></link>
+      <script src="jquery.justified.images.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </Head>
   );
 }
