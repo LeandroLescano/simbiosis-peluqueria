@@ -5,8 +5,10 @@ import JustifiedGrid from "react-justified-grid";
 
 function Gallery() {
   return (
-    <main>
-      <h1>Galeria</h1>
+    <>
+      <main>
+        <h1>Galeria</h1>
+      </main>
       <JustifiedGrid
         gutter={1}
         images={[
@@ -554,7 +556,7 @@ function Gallery() {
         showIncompleteRow={true}
         style={{}}
       />
-    </main>
+    </>
   );
 }
 
