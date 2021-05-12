@@ -1,13 +1,14 @@
 import React from "react";
-import Meta from "./components/meta";
+import Layout from "../components/layout"
 
 function Contact() {
   return (
-    <>
-      <Meta />
-      <h1>Contacto</h1>
-      <p> Prueba </p>
-    </>
+    <Layout title="Contacto | Simbiosis">
+      <main>
+        <h1>Contacto</h1>
+        <p> Prueba </p>
+      </main>
+    </Layout>
   );
 }
 
