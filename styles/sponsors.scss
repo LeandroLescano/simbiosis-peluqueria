@@ -1,12 +1,13 @@
 @use 'index.scss';
 
 .img-sponsor {
-    height: 100px;
-    border-radius: .2em;
-    background-color: index.$light-color;
-    margin: 0 auto !important;
+  height: 100px;
+  min-width: 264px;
+  border-radius: 0.2em;
+  background-color: index.$light-color;
+  margin: 0 auto !important;
 }
 
 .swiper-container {
-    width: 80vw;
+  width: 82vw;
 }

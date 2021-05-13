@@ -26,7 +26,7 @@ export default function Home() {
             <button className="draw meet">Galeria</button>
           </Link>
         </div>
-        <Sponsors/>
+        <Sponsors />
       </main>
     </Layout>
   );
