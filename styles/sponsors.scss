@@ -1,0 +1,12 @@
+@use 'index.scss';
+
+.img-sponsor {
+    height: 100px;
+    border-radius: .2em;
+    background-color: index.$light-color;
+    margin: 0 auto !important;
+}
+
+.swiper-container {
+    width: 80vw;
+}

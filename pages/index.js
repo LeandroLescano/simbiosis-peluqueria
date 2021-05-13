@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Layout from "../components/layout";
+import Sponsors from "../components/sponsors";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
             <button className="draw meet">Galeria</button>
           </Link>
         </div>
+        <Sponsors/>
       </main>
     </Layout>
   );
