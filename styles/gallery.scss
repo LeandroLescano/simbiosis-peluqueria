@@ -1,0 +1,23 @@
+@use 'index';
+
+#ReactGridGallery {
+  height: 100%;
+  width: 100%;
+}
+
+.close_1x3s325 {
+  right: -36px;
+  top: -23px !important;
+}
+
+.close_1x3s325 svg {
+  vertical-align: text-top !important;
+}
+
+.ReactGridGallery_tile-bottom-bar span {
+  color: white !important;
+}
+
+.image_1swebtw-o_O-imageLoaded_zgbg08 {
+  border: 3px solid index.$light-color;
+}
