@@ -1,4 +1,5 @@
 import "../styles/index.scss";
+import "../styles/gallery.scss";
 import "../styles/media-container.scss";
 /*
 import "../styles/sponsors.scss";
@@ -8,7 +9,7 @@ import "../styles/sponsors.scss";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-        <Component {...pageProps} />
+      <Component {...pageProps} />
     </>
   );
 }

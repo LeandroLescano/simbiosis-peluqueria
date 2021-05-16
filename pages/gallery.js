@@ -1,9 +1,6 @@
-import React, { Component } from "react";
-import { render } from "react-dom";
-import Gallery from "react-grid-gallery";
+import React from "react";
+import GalleryImgs from "react-grid-gallery";
 import Layout from "../components/layout";
-import { useEffect, useState } from "react";
-import JustifiedGrid from "react-justified-grid";
 
 const IMAGES = [
   {
@@ -12,7 +9,6 @@ const IMAGES = [
       "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
     thumbnailWidth: 320,
     thumbnailHeight: 174,
-    caption: "After Rain (Jeshu John - designerspics.com)",
   },
   {
     src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
@@ -24,7 +20,6 @@ const IMAGES = [
       { value: "Ocean", title: "Ocean" },
       { value: "People", title: "People" },
     ],
-    caption: "Boats (Jeshu John - designerspics.com)",
   },
 
   {
@@ -40,7 +35,6 @@ const IMAGES = [
       "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
     thumbnailWidth: 320,
     thumbnailHeight: 174,
-    caption: "After Rain (Jeshu John - designerspics.com)",
   },
   {
     src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
@@ -52,7 +46,6 @@ const IMAGES = [
       { value: "Ocean", title: "Ocean" },
       { value: "People", title: "People" },
     ],
-    caption: "Boats (Jeshu John - designerspics.com)",
   },
 
   {
@@ -66,17 +59,15 @@ const IMAGES = [
 
 //Le cambié el nombre a la función porque sino entra en conflicto con el componente que se importa del grid
 
-function pGallery() {
+function Gallery() {
   return (
-    <Layout title="Peluqueria | Simbiosis">
+    <Layout title="Galería | Simbiosis">
       <main>
-        <h1>Galeria</h1>
+        <h1 className="mb-5">Galería</h1>
+        <GalleryImgs images={IMAGES} enableImageSelection={false} />
       </main>
-      <div>
-        <Gallery images={IMAGES} />
-      </div>
     </Layout>
   );
 }
 
-export default pGallery;
+export default Gallery;

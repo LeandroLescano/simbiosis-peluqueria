@@ -24,8 +24,10 @@ function Layout({ children, title = "Peluquería | Simbiosis" }) {
           crossorigin="anonymous"
         ></script>
       </Head>
-      {children}
-      <Footer />
+      <div className="container">
+        {children}
+        <Footer />
+      </div>
     </div>
   );
 }
