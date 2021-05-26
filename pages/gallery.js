@@ -2,6 +2,19 @@ import React from "react";
 import GalleryImgs from "react-grid-gallery";
 import Layout from "../components/layout";
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDWI8YagdKD0kOqQ3JKZHg2W0ajl8wFpvs",
+  authDomain: "pelusimb.firebaseapp.com",
+  projectId: "pelusimb",
+  storageBucket: "pelusimb.appspot.com",
+  messagingSenderId: "657564698556",
+  appId: "1:657564698556:web:935aa4bd54ebf57b52cdb9",
+  measurementId: "G-SC414VR160",
+};
+
+firebase.initializeApp(firebaseConfig);
+
 const IMAGES = [
   {
     src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
