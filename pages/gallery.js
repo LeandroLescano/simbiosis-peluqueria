@@ -1,6 +1,8 @@
 import React from "react";
 import GalleryImgs from "react-grid-gallery";
 import Layout from "../components/layout";
+//Si lo borro acá y lo pongo en layout no funciona. Si lo borro de layout y lo vuelvo a poner acá me dice que está duplicado ?????
+import firebase from "firebase/app";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -14,6 +16,23 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
+
+/*
+let btt = document.getElementById("pruebita");
+btt.addEventListener("click", (e) => {
+  e.preventDefault();
+  logConGoogle();
+});
+*/
+
+function logConGoogle() {
+  const provider = new firebase.auth.GoogleAuthProvider();
+  firebase
+    .auth()
+    .signInWithPopup(provider)
+    .then((result) => console.log("Logueo", result.user.email))
+    .catch((error) => console.log(error.message));
+}
 
 const IMAGES = [
   {
@@ -76,6 +95,10 @@ function Gallery() {
   return (
     <Layout title="Galería | Simbiosis">
       <main>
+        <a href="" onClick={logConGoogle}>
+          {" "}
+          Pruebita
+        </a>
         <h1 className="mb-5">Galería</h1>
         <GalleryImgs images={IMAGES} enableImageSelection={false} />
       </main>
