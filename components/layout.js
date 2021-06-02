@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "./footer";
 import Head from "next/head";
+import Navbar from "../components/navbar";
 
 function Layout({ children, title = "Peluquería | Simbiosis" }) {
   return (
@@ -25,6 +26,7 @@ function Layout({ children, title = "Peluquería | Simbiosis" }) {
           crossOrigin="anonymous"
         ></script>
       </Head>
+      {title !== "Peluquería | Simbiosis" && <Navbar /> }
       <div className="container">
         {children}
         <Footer />

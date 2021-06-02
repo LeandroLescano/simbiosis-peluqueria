@@ -17,9 +17,9 @@ function Footer() {
             <b>Novedades</b> <br /> Mantenete al tanto de las nuevas tendencias
             a nivel mundial siguiendonos en las redes sociales.
             <div className="d-flex justify-content-end p-2 float-end">
-              <MediaContainer icon="facebook" />
-              <MediaContainer icon="twitter" />
-              <MediaContainer icon="instagram" />
+              <MediaContainer icon="facebook" link="http://www.facebook.com/peluqueria.simbiosis" />
+              <MediaContainer icon="twitter" link="http://twitter.com/simbiosisramos" />
+              <MediaContainer icon="instagram" link="http://instagram.com/simbiosispeluqueria/" />
             </div>
           </div>
         </div>

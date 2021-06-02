@@ -1,0 +1,49 @@
+@use 'global.scss';
+
+.contact-container {
+    background-color: global.$light-color;
+    padding: 1em;
+    border-radius: 0.2em;
+    width: 100%;
+  }
+  
+  .form-control:focus {
+    border-color: global.$primary-color;
+    box-shadow: 0 0 0 0.15rem rgb(70 69 85 / 25%);
+  }
+  
+  .btn {
+    &:hover {
+      color: global.$light-color !important;
+    }
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgb(70 69 85 / 25%);
+    }
+  }
+  
+  .btn-send {
+    margin: 0;
+    color: white;
+    background-color: global.$primary-color;
+  }
+  
+  @media (min-width: 768px) {
+    .contact-container {
+      width: 80%;
+    }
+  }
+  
+.map-responsive{
+    overflow:hidden;
+    position:relative;
+    height: 300px;
+    width: 80vw;
+    padding: .2em;
+    background-color: global.$primary-color;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    width:100%;
+    position:absolute;
+}

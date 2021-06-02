@@ -4,7 +4,7 @@ import Sponsors from "../components/sponsors";
 
 export default function Home() {
   return (
-    <Layout title="Peluqueria | Simbiosis">
+    <Layout>
       <main>
         <h2 className="m-0">Desde 2004</h2>
         <h1 className="title">Simbiosis</h1>

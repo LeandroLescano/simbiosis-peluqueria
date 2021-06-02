@@ -1,4 +1,4 @@
-@use 'index';
+@use 'global.scss';
 
 #ReactGridGallery {
   height: 100%;
@@ -19,5 +19,5 @@
 }
 
 .image_1swebtw-o_O-imageLoaded_zgbg08 {
-  border: 3px solid index.$light-color;
+  border: 3px solid global.$light-color;
 }

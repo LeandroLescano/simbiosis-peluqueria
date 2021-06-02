@@ -20,9 +20,11 @@ function MediaContainer(props) {
   }, []);
 
   return (
-    <div className="media-container">
-      <FontAwesomeIcon icon={icon} />
-    </div>
+    <a href={props.link} target="_blank" rel="noopener noreferrer">
+      <div className="media-container">
+        <FontAwesomeIcon icon={icon} />
+      </div>
+    </a>
   );
 }
 
