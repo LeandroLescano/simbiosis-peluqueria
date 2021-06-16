@@ -3,36 +3,24 @@ import GalleryImgs from "react-grid-gallery";
 import Layout from "../components/layout";
 //Si lo borro acá y lo pongo en layout no funciona. Si lo borro de layout y lo vuelvo a poner acá me dice que está duplicado ?????
 import firebase from "firebase/app";
+import "firebase/auth";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyDWI8YagdKD0kOqQ3JKZHg2W0ajl8wFpvs",
-  authDomain: "pelusimb.firebaseapp.com",
-  projectId: "pelusimb",
-  storageBucket: "pelusimb.appspot.com",
-  messagingSenderId: "657564698556",
-  appId: "1:657564698556:web:935aa4bd54ebf57b52cdb9",
-  measurementId: "G-SC414VR160",
-};
 
-firebase.initializeApp(firebaseConfig);
+// let btt = document.getElementById("pruebita");
+// btt.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   logConGoogle();
+// });
 
-/*
-let btt = document.getElementById("pruebita");
-btt.addEventListener("click", (e) => {
-  e.preventDefault();
-  logConGoogle();
-});
-*/
-
-function logConGoogle() {
+const logConGoogle = () => {
   const provider = new firebase.auth.GoogleAuthProvider();
   firebase
     .auth()
     .signInWithPopup(provider)
     .then((result) => console.log("Logueo", result.user.email))
     .catch((error) => console.log(error.message));
-}
+};
 
 const IMAGES = [
   {
@@ -95,10 +83,12 @@ function Gallery() {
   return (
     <Layout title="Galería | Simbiosis">
       <main>
-        <a href="" onClick={logConGoogle}>
-          {" "}
+        <button
+          style={{ padding: 0, backgroundColor: "transparent", color: "black" }}
+          onClick={() => logConGoogle()}
+        >
           Pruebita
-        </a>
+        </button>
         <h1 className="mb-5">Galería</h1>
         <GalleryImgs images={IMAGES} enableImageSelection={false} />
       </main>
